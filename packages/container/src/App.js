@@ -7,7 +7,7 @@ console.log(mount)
 export default function App() {
   return (
     <div>
-      <h1>Hi there, general Kennoby</h1>
+      <h1>Hi there!, general Kennoby</h1>
       <hr />
       <MarketingApp />
     </div>
