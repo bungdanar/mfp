@@ -19,6 +19,9 @@ export default function MarketingApp() {
       },
     })
 
+    // Need to be run first time
+    onParentNavigate(history.location)
+
     history.listen(onParentNavigate)
   }, [])
 
