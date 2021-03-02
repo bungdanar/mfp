@@ -8,6 +8,7 @@ export default function MarketingApp() {
 
   useEffect(() => {
     const { onParentNavigate } = mount(ref.current, {
+      initialPath: history.location.pathname,
       onNavigate: ({ pathname: nextPathname }) => {
         const { pathname } = history.location
 
@@ -18,9 +19,6 @@ export default function MarketingApp() {
         }
       },
     })
-
-    // Need to be run first time
-    onParentNavigate(history.location)
 
     history.listen(onParentNavigate)
   }, [])
